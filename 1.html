@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Başlıksız Belge</title>
+<style type="text/css">
+#sayfa {
+	width: 700px;
+	border-top-color: #06F;
+	border-right-color: #06F;
+	border-bottom-color: #06F;
+	border-left-color: #06F;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+.formkutukisi {
+	margin: 10px;
+	padding: 10px;
+	width: 350px;
+	border: 1px solid #00F;
+	background-image: url(formdesign/iconlar/kisi.png);
+	background-repeat: no-repeat;
+	background-position: 2px 50%;
+}
+.farmkutusifre {
+	margin: 10px;
+	padding: 10px;
+	width: 350px;
+	background-image: url(formdesign/iconlar/group_add.png);
+	background-repeat: no-repeat;
+	background-position: 2px 50%;
+	border: 1px solid #00F;
+}
+.formkutumail {
+	margin: 10px;
+	padding: 10px;
+	width: 350px;
+	border: 1px solid #00F;
+	background-image: url(formdesign/iconlar/group.png);
+	background-repeat: no-repeat;
+	background-position: 2px 50%;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+.selectbolumu {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #00F;
+	width: 200px;
+}
+.labelyazi {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	color: #00F;
+	margin: 10px;
+	padding: 10px;
+	display: block;
+}
+body {
+	background-color: #00F;
+}
+#sayfa h1 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #00F;
+	display: block;
+	text-align: center;
+	letter-spacing: 10px;
+	padding: 10px;
+}
+.buton {
+	color: #FFF;
+	background-color: #00F;
+	height: 20px;
+	width: 70px;
+	border: 1px solid #00F;
+}
+</style>
+</head>
+
+<body>
+<div id="sayfa">
+  <h1>İletiŞim Formu</h1>
+  <form id="form1" name="form1" method="post">
+    <p>
+      <label for="textfield" class="labelyazi">Adınız Soyadınız:</label>
+      <input name="textfield" type="text" class="formkutukisi" id="textfield">
+      <br>
+      <label for="textfield2"><span class="labelyazi">Şifreniz:</span></label>
+      <input name="textfield2" type="password" class="farmkutusifre" id="textfield2">
+      <br>
+      <label for="textfield3" class="labelyazi">E-Mail:</label>
+      <input name="textfield3" type="text" class="formkutumail" id="textfield3">
+      <br>
+      <label for="select" class="labelyazi">Bulunduğunuz Şehir:</label>
+      <select name="select" class="selectbolumu" id="select">
+      <option>İstanbul</option>
+      <option>İzmir</option>
+      <option>Ankara</option>
+      </select>
+      <br>
+      <label for="textarea"><span class="labelyazi">Açıklama:</span></label>
+      <textarea name="textarea" class="formkutumail" id="textarea"></textarea>
+      <br>
+      <input name="submit" type="submit" class="buton" id="submit" value="Gönder">
+      <input name="reset" type="reset" class="buton" id="reset" value="Sıfırla">
+    </p>
+  </form>
+  <p>&nbsp;</p>
+</div>
+</body>
+</html>
